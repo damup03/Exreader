@@ -101,7 +101,7 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "Excel|*.xls";
+            this.openFileDialog1.Filter = "Все файлы (*.*)|*.*";
             // 
             // Form1
             // 
