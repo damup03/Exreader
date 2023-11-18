@@ -36,6 +36,8 @@
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.экспортWordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.экспортExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -54,7 +56,9 @@
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.открытьToolStripMenuItem});
+            this.открытьToolStripMenuItem,
+            this.экспортWordToolStripMenuItem,
+            this.экспортExcelToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
@@ -62,7 +66,7 @@
             // открытьToolStripMenuItem
             // 
             this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
-            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.открытьToolStripMenuItem.Text = "Открыть";
             this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
             // 
@@ -103,6 +107,20 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "Все файлы (*.*)|*.*";
             // 
+            // экспортWordToolStripMenuItem
+            // 
+            this.экспортWordToolStripMenuItem.Name = "экспортWordToolStripMenuItem";
+            this.экспортWordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.экспортWordToolStripMenuItem.Text = "Экспорт Word";
+            this.экспортWordToolStripMenuItem.Click += new System.EventHandler(this.экспортWordToolStripMenuItem_Click);
+            // 
+            // экспортExcelToolStripMenuItem
+            // 
+            this.экспортExcelToolStripMenuItem.Name = "экспортExcelToolStripMenuItem";
+            this.экспортExcelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.экспортExcelToolStripMenuItem.Text = "Экспорт Excel";
+            this.экспортExcelToolStripMenuItem.Click += new System.EventHandler(this.экспортExcelToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,6 +152,8 @@
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem экспортWordToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem экспортExcelToolStripMenuItem;
     }
 }
 
