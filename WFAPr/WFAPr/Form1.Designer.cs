@@ -31,13 +31,14 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.экспортWordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.экспортExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.экспортWordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.экспортExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportWithCellsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -58,7 +59,8 @@
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.открытьToolStripMenuItem,
             this.экспортWordToolStripMenuItem,
-            this.экспортExcelToolStripMenuItem});
+            this.экспортExcelToolStripMenuItem,
+            this.exportWithCellsToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
@@ -69,6 +71,20 @@
             this.открытьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.открытьToolStripMenuItem.Text = "Открыть";
             this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
+            // 
+            // экспортWordToolStripMenuItem
+            // 
+            this.экспортWordToolStripMenuItem.Name = "экспортWordToolStripMenuItem";
+            this.экспортWordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.экспортWordToolStripMenuItem.Text = "Экспорт Word";
+            this.экспортWordToolStripMenuItem.Click += new System.EventHandler(this.экспортWordToolStripMenuItem_Click);
+            // 
+            // экспортExcelToolStripMenuItem
+            // 
+            this.экспортExcelToolStripMenuItem.Name = "экспортExcelToolStripMenuItem";
+            this.экспортExcelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.экспортExcelToolStripMenuItem.Text = "Экспорт Excel";
+            this.экспортExcelToolStripMenuItem.Click += new System.EventHandler(this.экспортExcelToolStripMenuItem_Click);
             // 
             // toolStrip1
             // 
@@ -107,19 +123,12 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "Все файлы (*.*)|*.*";
             // 
-            // экспортWordToolStripMenuItem
+            // exportWithCellsToolStripMenuItem
             // 
-            this.экспортWordToolStripMenuItem.Name = "экспортWordToolStripMenuItem";
-            this.экспортWordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.экспортWordToolStripMenuItem.Text = "Экспорт Word";
-            this.экспортWordToolStripMenuItem.Click += new System.EventHandler(this.экспортWordToolStripMenuItem_Click);
-            // 
-            // экспортExcelToolStripMenuItem
-            // 
-            this.экспортExcelToolStripMenuItem.Name = "экспортExcelToolStripMenuItem";
-            this.экспортExcelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.экспортExcelToolStripMenuItem.Text = "Экспорт Excel";
-            this.экспортExcelToolStripMenuItem.Click += new System.EventHandler(this.экспортExcelToolStripMenuItem_Click);
+            this.exportWithCellsToolStripMenuItem.Name = "exportWithCellsToolStripMenuItem";
+            this.exportWithCellsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exportWithCellsToolStripMenuItem.Text = "Export with Cells";
+            this.exportWithCellsToolStripMenuItem.Click += new System.EventHandler(this.exportWithCellsToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -154,6 +163,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ToolStripMenuItem экспортWordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem экспортExcelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportWithCellsToolStripMenuItem;
     }
 }
 
